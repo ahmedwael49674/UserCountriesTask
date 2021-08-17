@@ -60,7 +60,7 @@ Example: (Update User API)
 4. Run `php artisan test`
 5. Run `php artisan serv`
 ## API's
-1. GET `/api/v1/users` : index all active users in the database , accepts `country_id` as query param to filter by country.
+1. GET `/api/v1/users` : index all active users in the database , accepts `country_id` as query param to filter by country (ex. ?country_id=1 filter active Austrian citizenship).
 2. DELETE `/api/v1/users/{user}` : deletes the given user if user doesn't have details.
 2. PATCH `/api/v1/users/{user}/details` : update one or more user details attributes only if user details exists.
 
