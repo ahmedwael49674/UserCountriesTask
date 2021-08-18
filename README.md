@@ -52,11 +52,21 @@ Example: (Update User API)
 6. Return the response to the controller with passes it to `UserResource`.
 
 ## How to run
+
+### Docker
+For running with docker use [Laravel Sail](https://laravel.com/docs/8.x/sail) package which is already included in `compposer.json`, simply it's a `docker-compose` came with PHP, MySQL, and Redis and it'ss ready to start with one single command .
 1. Clone the project.
-2. Set up .env
-3. Run `php artisan migrate --seed` which will seed the database exactly like `database.sql`
-4. Run `php artisan test`
-5. Run `php artisan serv`
+2. Run `composer install`
+3. Run `sail up -d`
+
+### Local
+
+1. Clone the project.
+2. Run `composer install`
+3. Set up .env
+4. Run `php artisan migrate --seed` which will seed the database exactly like `database.sql`
+5. Run `php artisan test`
+6. Run `php artisan serv`
 
 ## API's
 1. GET `/api/v1/users` : index all active users in the database , accepts `country_id` as query param to filter by country (ex. ?country_id=1 filter active Austrian citizenship).
