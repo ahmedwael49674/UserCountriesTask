@@ -54,7 +54,7 @@ Example: (Update User API)
 ## How to run
 
 ### Docker
-For running with docker use [Laravel Sail](https://laravel.com/docs/8.x/sail) package which is already included in `compposer.json`, simply it's a `docker-compose` came with PHP, MySQL, and Redis and it'ss ready to start with one single command .
+For running with docker use [Laravel Sail](https://laravel.com/docs/8.x/sail) package which is already included in `composer.json`, simply it's a `docker-compose` came with PHP, MySQL, and Redis and it'ss ready to start with one single command .
 1. Clone the project.
 2. Run `composer install`
 3. Run `sail up -d`
